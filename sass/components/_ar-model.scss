@@ -1,0 +1,93 @@
+@use '../abstracts' as a;
+
+model-viewer {
+    width: 400px;
+    height: 900px;
+    margin: 0 auto;
+    @include a.moving-gradient;
+
+    &::part(default-progress-bar) {
+        height: 10px;
+        background-color: #ff67b6;
+    }
+}
+
+.Hotspot {
+    background: url(../images/hotspot.svg) center no-repeat;
+    border: 0;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    display: none;
+
+    &:not([data-visible]) {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+.HotspotAnnotation {
+    @include a.flex-center-column;
+    color: rgb(86, 74, 92);
+    backdrop-filter: saturate(100%) blur(50px);
+    background-color: rgba(249, 249, 249, 0.532);
+    visibility: hidden;
+    border-radius: 50px;
+    box-shadow: 0 2px 4px rgba(56, 11, 135, 0.25);
+    left: calc(100% + 1em);
+    max-width: 150px;
+    overflow-wrap: break-word;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    width: max-content;
+
+    img {
+        height: 30px;
+        margin-top: 16px;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        margin-top: 16px;
+        margin-bottom: 10px;
+    }
+}
+
+//Tablet Media Queries 
+
+@media screen and (min-width: 768px) {
+
+    model-viewer {
+        width: 768px;
+        height: 800px;
+    }
+
+    .HotspotAnnotation {
+        max-width: 300px;
+
+        img {
+            height: 50px;
+        }
+
+    }
+
+}
+
+//Desktop Media Queries 
+
+@media screen and (min-width: 1200px) {
+
+    model-viewer {
+        width: 1200px;
+    }
+
+}
+
+//Large Desktop Media Queries 
+@media screen and (min-width: 1920px) {
+
+    model-viewer {
+        width: 1920px;
+    }
+}
