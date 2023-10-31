@@ -1,0 +1,48 @@
+@use '../abstracts' as a;
+
+
+// Hero 
+
+#hero {
+    text-align: center;
+    margin-top: 50px;
+
+    .box {
+        height: 600px;
+    }
+
+    h2 {
+        margin-bottom: 50px;
+    }
+}
+
+
+
+// Buy Area
+
+#buy-area img {
+    width:50%;
+}
+
+@media screen and (min-width: 768px) {
+
+#hero {
+    .box {
+            height: 800px;
+        }
+    
+    }
+
+}
+
+
+@media screen and (min-width: 1200px) {
+
+#hero  {          
+    .box {
+    height: 1080px;
+    }   
+
+}
+
+}

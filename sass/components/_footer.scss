@@ -1,1 +1,98 @@
 @use '../abstracts' as a;
+
+/* Footer  */
+
+.main-nav ul li a {
+    font-weight: bold; 
+    text-decoration: none;
+    transition: all .4s ease;
+    margin-right: 10px;
+    padding-left: 9px;
+    display: block;
+}
+
+footer  .burger-button{
+    display: none;
+}
+
+#footer-burger-con {
+    display: none;
+}
+
+
+#footer ul {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/* Tablet Size */ 
+
+@media screen and (min-width: 768px) {
+
+    
+     /* Footer */
+    #footer-nav {
+        display: block;
+        margin-top: 30px;
+    }
+    
+    .main-nav ul li a {
+        font-weight: bold; 
+        text-decoration: none;
+        transition: all .4s ease;
+        margin-right: 10px;
+        padding-left: 9px;
+       display: block;
+    }
+    
+    footer  .burger-button {
+        display: none;
+    }
+    
+    .footer-burger-con {
+        display: none;
+    }
+
+    
+ #footer-burger-con ul li, .burger-con ul li:first-child {
+    border: none;
+    display: inline;
+ }
+
+}
+
+
+@media screen and (min-width: 1200px) {
+
+ 
+
+    /* main nav */ 
+        
+        
+        .burger-con {
+            display: flex;
+            margin-top: 30px;
+            justify-content: center;
+        }
+        
+        #footer-burger-con {
+            display: block;
+            margin-top: 40px;
+        }
+        
+      
+        
+        
+        
+        .burger-button {
+            display: none;
+        }
+    
+        .burger-con ul li, .burger-con ul li:first-child {
+            border: none;
+            display: inline;
+         }
+    
+    
+    }
+    

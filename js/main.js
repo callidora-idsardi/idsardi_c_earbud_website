@@ -98,5 +98,28 @@
         hotspot.addEventListener("mouseover", displayInfo);
         hotspot.addEventListener("mouseout", hideInfo);
     });
+
+
+    // Hamburger Menu Start
+console.log('js is wired!');
+
+(function(){
+	"use strict";	
+	console.log("fired");
+
+	let button = document.querySelector(" .burger-button");
+	let burgerCon = document.querySelector(".burger-con");
+
+	function hamburgerMenu() {
+		burgerCon.classList.toggle("slide-toggle");
+		button.classList.toggle("expanded");
+	};
+
+	
+
+	button.addEventListener("click", hamburgerMenu, false);		
+})();
+
+// Hamburger Menu End
 })();
 
