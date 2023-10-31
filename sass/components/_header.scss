@@ -1,1 +1,141 @@
 @use '../abstracts' as a;
+
+
+
+.logo {
+   width: 20%;
+   margin: 20px;
+}
+
+.nav-con  {
+   margin-right: 20px;
+   button {
+    background: url(../images/hamburger-icon.svg) no-repeat center;
+    margin-top: 10px;
+    transition: all .5s ease;
+    border: 0;
+    height: 100px;
+    width: 80px;
+    
+   }
+
+   ul {
+      padding: 0;
+      margin: 0;
+   }
+
+   ul li a {
+      display: block;
+      text-align: center;
+      transition: all .4s ease;
+      margin: 15px;
+
+      &:hover {
+         color: rgb(218, 170, 248);
+      }
+   }
+
+ }
+
+
+
+ .burger-con {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: none;
+    order: -1;
+
+    &.slide-toggle {
+      display: block;
+    }
+ }
+ 
+
+
+#sub-nav-con {
+
+   background-color: rgb(225, 225, 225);
+   padding: 10px;
+    @include a.flex-center;
+    font-size: 1.2rem;
+    margin-top: 40px;
+
+    ul li {
+      display: inline;
+      transition: all .4s ease;
+      padding: 10px;
+    }
+ }
+
+ .mobile-nav-icons {
+   @include a.flex-center;
+   width: 100px;
+}
+
+
+/* Tablet Size */ 
+
+    @media screen and (min-width: 768px) {
+   
+      .logo {
+         width: 40%;
+         margin: 20px;
+      }
+
+      #sub-nav-con {
+         font-size: 1.6rem;
+      }
+
+
+   .burger-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-top: 30px;
+    text-align: center;
+    margin: 20px;
+    margin-bottom: 0;
+}
+
+
+.burger-con ul li, .burger-con ul li:first-child {
+    border: none;
+    display: inline;
+ }
+
+ }
+
+
+@media screen and (min-width: 1200px) {
+
+   .logo {
+      width: 30%;
+      margin: 20px;
+   }
+
+   #sub-nav-con {
+      display: block;
+   }
+
+    
+.nav-con {
+      margin-top: 30px;
+
+   ul li a {
+      display: inline;
+      text-align: center;
+      transition: all .4s ease;
+      font-size: 1.6rem;
+      padding: 10px;
+   }
+}
+   .burger-button {
+        display: none;
+    }
+
+    .burger-con ul li, .burger-con ul li:first-child {
+        border: none;
+        display: inline;
+     }
+
+}

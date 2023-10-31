@@ -1,26 +1,47 @@
 @use '../abstracts/variables' as v;
-
+html {
+    font-size: 62.5%;
+  }
 
 h2 {
     font-family: v.$heading-font-family;
-    font-size: 16px;
+    font-size: 3.0rem;
 }
 
 p {
     font-family: v.$body-font-family;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 1.2rem;
     line-height: 25px;
 }
+
+
+ul li a {
+    text-decoration: none;
+}
+
+ul {
+    font-family: v.$body-font-family;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
 
 @media screen and (min-width: 768px) {
 
     h2 {
-        font-size: 20px;
+        font-size: 8.0rem;
     }
 
     p {
-        font-size: 16px;
+        font-size: 1.6rem;
+    }
+
+    ul {
+        font-size: 1.6rem;
     }
 
 }
+
