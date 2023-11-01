@@ -25,6 +25,21 @@ footer  .burger-button{
     list-style-type: none;
 }
 
+.sub-footer-nav {
+    @include a.flex-center;
+    gap: 50px;
+
+    h3 {
+        font-size: 1.6rem;
+        margin-bottom: 5px;
+    }
+
+    ul li {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+}
+
 /* Tablet Size */ 
 
 @media screen and (min-width: 768px) {

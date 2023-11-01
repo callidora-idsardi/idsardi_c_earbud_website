@@ -21,10 +21,13 @@
             <div class= "logo col-start-1 col-end-3 m-col-start-1 m-col-end-3">
                 <img src="images/hotspot.svg" alt="Crystal ClearBuds Logo">
             </div>
-            <nav class="nav-con col-start-4 m-col-start-11 m-col-end-13 l-col-start-3 l-col-end-13">
-                <h2 class="hidden">Main Navigation</h2> 
-                <button class="burger-button"></button>
-                <div class="burger-con">
+            <div class="grid-con" id="menu">
+                <div id="burger-button">
+                  <div id="bar1" class="bar"></div>
+                  <div id="bar2" class="bar"></div>
+                  <div id="bar3" class="bar"></div>
+                </div>
+                <nav class="col-start-1 l-col-start-5 l-col-end-12 burger-con" id="burger-con">
                   <ul class="burger-menu">
                     <li><a href="#">PRODUCTS</a></li>
                     <li><a href="#">EARBUDS</a></li>
@@ -32,12 +35,15 @@
                     <li><a href="#">SUPPORT</a></li>
                     <li><a href="index.html">HOME</a></li>
                     <li class="mobile-nav-icons">
-                        <a href="#"><img src="images/icon-account.svg" alt="account icon"></a> 
+                        <a href="#"><img src="images/icon-search.svg" alt="account icon"></a>
+                        <a href="#"><img src="images/icon-account.svg" alt="account icon"></a>
                         <a href="#"><img src="images/icon-shopping-cart.svg" alt="shopping cart icon"></a>
                     </li>
                 </ul>
-                </div>
-            </nav>
+                </nav> 
+              </div>
+              
+              <div class="burger-bg" id="burger-bg"></div>
         </header>
 
         <section class="grid-con">
@@ -122,54 +128,69 @@
            </div>
         </section> 
 
-        <div>
-            <div class="grid-con  info-box">
+        <div id="info-con">
+            <div class="grid-con">
                 <div class="box col-span-full m-col-start-1 m-col-end-7">
                     img1
                 </div>
-                <div class="box col-span-full m-col-start-7 m-col-end-13">
+                <div id="infobox1" class="info-box col-span-full m-col-start-7 m-col-end-13 l-col-start-7 l-col-end-12">
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim illum nostrum reiciendis.</p>
                 </div>
             </div>
 
-            <div class="grid-con info-box">
-                <div class="box col-span-full m-col-start-1 m-col-end-7">
+            <div class="grid-con">
+                <div id="infobox2" class="info-box col-span-full m-col-start-1 m-col-end-7 l-col-start-2 l-col-end-7">
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim illum nostrum reiciendis.</p>
                 </div>
                 <div class="box col-span-full m-col-start-7 m-col-end-13">
                     img2
                 </div>
-               
             </div>
         </div>
     </main>
 
     <footer class="grid-con">
-        <nav class="nav-con col-span-full m-col-start-5 m-col-end-13 l-col-start-5 l-col-end-13">
+        <nav class="sub-footer-nav col-span-full">
           <h2 class="hidden">Sub Navigation</h2> 
-          <ul>
-              <li>Customer Support</li>
+        <section>
+            <h3>Constumer Support</h3>
+            <ul>
               <li><a href="#">Contact Us</a></li>
               <li><a href="#">Help Center</a></li>
               <li><a href="#">Returns & Exchanges</a></li>
               <li><a href="#">Gift Cards</a></li>
-          </ul>
-
+           </ul>
+        </section>
+          
+        <section>
+            <h3>Account</h3>
           <ul>
-            <li>Account</li>
             <li><a href="#">Manage Account</a></li>
             <li><a href="#">Order History</a></li>
             <li><a href="#">Account Preferences</a></li>
           </ul>
+        </section>
 
+        <section>
+            <h3>Company</h3>
           <ul>
-            <li>Company</li>
             <li><a href="#">Careers</a></li>
             <li><a href="#">About Usy</a></li>
             <li><a href="#">Security</a></li>
             <li><a href="#">Media</a></li>
             <li><a href="#">Policies</a></li>
           </ul>
+        </section>
+
+        <section>
+            <h3 class="hidden">Our Social Media</h3>
+            <li class="mobile-nav-icons">
+                <a href="#"><img src="images/icon-facebook.svg" alt="Facebook"></a> 
+                <a href="#"><img src="images/icon-twitter.svg" alt="Twitter"></a>
+                <a href="#"><img src="images/icon-linkedin.svg" alt="Linkedin"></a>
+                <a href="#"><img src="images/icon-instagram.svg" alt="Instagram"></a>
+            </li>
+        </section>
 
           <section id="footer-newsletter1">
             <h3>Join the mailing list for exclusive deals</h3>
@@ -180,18 +201,19 @@
           </section>
         </nav>
 
-        <nav class="nav-con  m-col-start-11 m-col-end-13 l-col-start-5 l-col-end-13">
+        <nav class="nav-con col-span-full">
             <h2 class="hidden">Main Navigation</h2> 
             <button class="burger-button"></button>
             <div class="burger-con">
-              <ul id="burger-menu">
+              <ul class="burger-menu">
                 <li><a href="#">PRODUCTS</a></li>
                 <li><a href="#">EARBUDS</a></li>
                 <li><a href="#">ACCESSORIES</a></li>
                 <li><a href="#">SUPPORT</a></li>
                 <li><a href="index.html">HOME</a></li>
-                <li class="mobile-nav-icons"><a href="account.html"><img src="img/account_icon.svg" alt="account icon"></a> 
-                    <a href="account.html"><img src="img/shopping_icon.svg" alt="shopping cart icon"></a>
+                <li class="mobile-nav-icons">
+                    <a href="#"><img src="images/icon-account.svg" alt="account icon"></a> 
+                    <a href="#"><img src="images/icon-shopping-cart.svg" alt="shopping cart icon"></a>
                 </li>
             </ul>
             </div>
