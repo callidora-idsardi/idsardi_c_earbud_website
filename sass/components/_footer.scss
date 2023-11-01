@@ -1,7 +1,5 @@
 @use '../abstracts' as a;
 
-/* Footer  */
-
 .main-nav ul li a {
     font-weight: bold; 
     text-decoration: none;
@@ -20,11 +18,6 @@ footer  .burger-button{
 }
 
 
-#footer ul {
-    text-decoration: none;
-    list-style-type: none;
-}
-
 .sub-footer-nav {
     @include a.flex-center;
     gap: 50px;
@@ -40,12 +33,16 @@ footer  .burger-button{
     }
 }
 
+
+.icon-con {
+   display: flex;
+   padding: 50px; 
+}
+
 /* Tablet Size */ 
 
 @media screen and (min-width: 768px) {
 
-    
-     /* Footer */
     #footer-nav {
         display: block;
         margin-top: 30px;
@@ -79,35 +76,14 @@ footer  .burger-button{
 
 @media screen and (min-width: 1200px) {
 
- 
-
-    /* main nav */ 
-        
-        
         .burger-con {
             display: flex;
             margin-top: 30px;
             justify-content: center;
         }
         
-        #footer-burger-con {
-            display: block;
-            margin-top: 40px;
-        }
-        
-      
-        
-        
-        
         .burger-button {
             display: none;
         }
-    
-        .burger-con ul li, .burger-con ul li:first-child {
-            border: none;
-            display: inline;
-         }
-    
-    
-    }
+ }
     
