@@ -36,6 +36,32 @@
 }
 
 
+// Info and Image Section
+
+#info-con {
+    padding: 50px;
+}
+
+.info-box {
+    @include a.moving-gradient;
+
+    p {
+        padding: 50px;
+    }
+
+    margin: 10px;
+}
+
+#infobox1 {
+
+    border-radius: 5px 60px;
+}
+
+#infobox2 {
+    border-radius: 60px 5px;
+}
+
+
 @media screen and (min-width: 1200px) {
 
 #hero  {          

@@ -103,23 +103,19 @@
     // Hamburger Menu Start
 console.log('js is wired!');
 
-(function(){
-	"use strict";	
-	console.log("fired");
+    (function () {
+    let burgerButton = document.getElementById('burger-button');
+    let burgerCon = document.getElementById('burger-con');
+    let burgerBg = document.getElementById('burger-bg');
 
-	let button = document.querySelector(" .burger-button");
-	let burgerCon = document.querySelector(".burger-con");
+    function hamburgerMenu() {
+        burgerButton.classList.toggle('transform');
+        burgerCon.classList.toggle('transform');
+        burgerBg.classList.toggle('transform-bg');
+    }
 
-	function hamburgerMenu() {
-		burgerCon.classList.toggle("slide-toggle");
-		button.classList.toggle("expanded");
-	};
-
-	
-
-	button.addEventListener("click", hamburgerMenu, false);		
+    burgerButton.addEventListener('click', hamburgerMenu);
 })();
 
-// Hamburger Menu End
 })();
 

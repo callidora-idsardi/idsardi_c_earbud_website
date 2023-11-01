@@ -18,6 +18,12 @@ p {
 
 ul li a {
     text-decoration: none;
+    color: rgb(104, 72, 162);
+    transition: all .4s ease;
+
+    &:hover {
+        opacity: 50%;
+    }
 }
 
 ul {
