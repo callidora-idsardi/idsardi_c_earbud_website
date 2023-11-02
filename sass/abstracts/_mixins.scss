@@ -1,7 +1,9 @@
 //Mixins
 
 
-
+@mixin box-shadow {
+      box-shadow: 9px 8px 10px -2px rgba(0,0,0,0.1);
+}
 
 
 //moving gradient 
