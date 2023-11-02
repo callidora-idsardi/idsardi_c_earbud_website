@@ -1,19 +1,23 @@
 @use '../abstracts' as a;
 
-#sticky {
-   background-color: #fcf5ff;
+.mobile-logo {
+   position: absolute;
+   width: 10%;
+   right: 3em;
+  top: 5px;
+   
 }
 
-.logo {
-   width: 20%;
-   margin: 20px;
+.desktop-logo {
+   display: none;
 }
+
 
 .nav-con  {
+ 
 
    ul {
       padding: 0;
-      margin: 0;
    }
 
    ul li a {
@@ -26,12 +30,11 @@
  }
 
 #sub-nav-con {
-
-   background-color: rgb(225, 225, 225);
+   background-color: white;
    padding: 10px;
     @include a.flex-center;
+    @include a.box-shadow;
     font-size: 1.2rem;
-    margin-top: 40px;
 
     ul li {
       display: inline;
@@ -41,26 +44,24 @@
  }
 
  .mobile-nav-icons {
-   @include a.flex-center;
+   margin-top: 20px;
+
    width: 200px;
 
    img {
       transition: all .4s ease;
+   
+      &:hover {
+         opacity: 50%;
+      }
    }
-   img:hover {
-      opacity: 50%;
-   }
-}
+
+ }
 
 
 /* Tablet Size */ 
 
     @media screen and (min-width: 768px) {
-   
-      .logo {
-         width: 40%;
-         margin: 20px;
-      }
 
       #sub-nav-con {
          font-size: 1.6rem;
@@ -71,15 +72,30 @@
 
 @media screen and (min-width: 1200px) {
 
+   .mobile-logo {
+      display: none;
+   }
 
- 
+   .mobile-nav-icons {
+      margin-top: 0;
+   }
+
+   .desktop-logo {
+      width: 2%;
+      display:inline;
+      margin-right: 50px;
+   }
+
+
   #burger-con {
    @include a.flex-center;
    margin-top: 60px;
+   text-align: center;
+   background-color: #eff0ff8f;
 
   ul li a {
       display: inline;
-      font-size: 2.1rem;
+      font-size: 1.6rem;
       padding: 10px;
       text-decoration: none;
       color: rgb(104, 72, 162);
@@ -91,7 +107,7 @@
 
    }
 
-   ul li, #burger-con ul li:first-child {
+   ul li, &:first-child {
       border: none;
       display: inline;
 
@@ -108,5 +124,6 @@
 #burger-button {
    display: none;
 }
+
 
 }
