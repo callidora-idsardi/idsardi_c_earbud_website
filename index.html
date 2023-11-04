@@ -84,7 +84,8 @@
                 <a class="button" href="#">BUY NOW</a>
             </div>
 
-            <section>
+            <div class="grid-con">
+                <section class="col-span-full">
                 <h2 class="hidden">Crystal ClearBuds Model</h2>
                 <model-viewer id="model" src="model/idsardi_c__earbud_sub1.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1">
             
@@ -119,16 +120,19 @@
                         </div>
                     </button>
                 </model-viewer>
-        </section>
+            </section>
+            </div>
 
-        <section class="grid-con">
+        <section class="grid-con" id="xray-container">
             <h2 class="hidden">Crystal ClearBuds X-Ray Viewer</h2>
             <div class="col-span-full l-col-start-1 l-col-end-6" id="xray-area">
             <section>
                 <h2>POINT 1 </h2>
                 <div class="xray-info">
                 <img src="https://placehold.co/70x70" alt="placeholder">
-                <p>POINT 1 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi itaque provident facere vel doloremque, porro praesentium reprehenderit eaque delectus, quas magni ipsa possimus molestiae ex qui vero id sint eligendi!</p></li>
+                <div class="img-border">
+                    <p>POINT 1 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi itaque provident facere vel doloremque, porro praesentium reprehenderit eaque delectus, quas magni ipsa possimus molestiae ex qui vero id sint eligendi!</p>
+                <div>
                 </div>
             </section>
 
@@ -136,21 +140,45 @@
                 <h2>POINT 2</h2>
                 <div class="xray-info">
                 <img src="https://placehold.co/70x70" alt="placeholder">
-                <p>POINT 1 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi itaque provident facere vel doloremque, porro praesentium reprehenderit eaque delectus, quas magni ipsa possimus molestiae ex qui vero id sint eligendi!</p></li>
+                <div class="img-border">
+                    <p>POINT 1 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi itaque provident facere vel doloremque, porro praesentium reprehenderit eaque delectus, quas magni ipsa possimus molestiae ex qui vero id sint eligendi!</p>
+                <div>
                 </div>
             </section>
                 
+          
             <section>
                 <h2>POINT 3</h2>
-                <div class="xray-info">
+                <div class="xray-info" >
                 <img src="https://placehold.co/70x70" alt="placeholder">
-                <p>POINT 1 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi itaque provident facere vel doloremque, porro praesentium reprehenderit eaque delectus, quas magni ipsa possimus molestiae ex qui vero id sint eligendi!</p></li>
+                <div class="img-border">
+                <p>POINT 1 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi itaque provident facere vel doloremque, porro praesentium reprehenderit eaque delectus, quas magni ipsa possimus molestiae ex qui vero id sint eligendi!</p>
+                <div>
                 </div>
             </section>
+         
+
+
             </div>
-            <div id="xray" class="box col-span-full l-col-start-6 l-col-end-13">
-                X-RAY
+            <section class="col-span-full l-col-start-6 l-col-end-13">
+            <h2 class="hidden">X-Ray revealer</h2>
+
+            <div id="mobile-tablet-view">
+                <img src="images/earbud-x-ray.jpg" alt="x-ray view of earbuds">
+                <img src="images/earbud.jpg" alt="outer view of earbuds">
+                <!-- Now you can slide up in mobile view  -->
             </div>
+                <div id="imageCon" class="col-span-full">
+                    <!-- Three images stacked together  -->
+                    <!-- xray version -->
+                    <div class="slideImage image-right"></div>
+                    <!-- rendered version -->
+                    <div class="slideImage image-left"></div>
+                    <!-- drag bar -->
+                    <div class="slideImage image-drag"></div>
+                </div>
+            </div>
+            </section>
         </section> 
 
         <div id="info-con">
@@ -233,7 +261,9 @@
     </footer>
 
     <!-- Loads <model-viewer> for browsers: -->
+
     <script src="js/main.js"></script>
+    <script src="js/x-ray.js"></script>
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
 
 </body>
