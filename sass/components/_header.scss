@@ -1,10 +1,9 @@
 @use '../abstracts' as a;
 
 .mobile-logo {
-   position: absolute;
-   width: 10%;
-   right: 3em;
-  top: 5px;
+   width: 30px;
+   margin-left: 30px;
+   margin-top: 25px;
    
 }
 
@@ -41,6 +40,17 @@
       transition: all .4s ease;
       padding: 10px;
     }
+
+    .buy-button {
+      border: 1px solid;
+      padding: 6px;
+      border-radius: 15px 2px;
+      font-weight:bold;
+
+      ul li a  {
+         margin-left: 50px;
+      }
+    }
  }
 
  .mobile-nav-icons {
@@ -62,6 +72,13 @@
 /* Tablet Size */ 
 
     @media screen and (min-width: 768px) {
+
+      .mobile-logo {
+         width: 30px;
+         margin-left: 0px;
+         margin-top: 25px;
+         
+      }
 
       #sub-nav-con {
          font-size: 1.6rem;
@@ -91,7 +108,7 @@
    @include a.flex-center;
    margin-top: 60px;
    text-align: center;
-   background-color: #eff0ff8f;
+   @include a.background-blur;
 
   ul li a {
       display: inline;

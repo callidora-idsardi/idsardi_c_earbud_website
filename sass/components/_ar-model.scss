@@ -6,7 +6,6 @@ model-viewer {
     width: 400px;
     height: 900px;
     margin: 0 auto;
-    @include a.moving-gradient;
 
     &::part(default-progress-bar) {
         height: 10px;

@@ -12,7 +12,7 @@
  }
  
  .transform .bar {
-   background-color: white;
+  @include a.moving-gradient;
 }
  .bar {
    height: 10px;
@@ -41,7 +41,6 @@
    }
 
    ul li a {
-      color: white;
       font-size: 16px;
       margin-right: 10px;
    }
@@ -60,7 +59,7 @@
    z-index: 1;
    width: 0;
    height: 0;
-   @include a.moving-gradient;
+   @include a.background-blur;
    border-radius: 50%;
    transition: .6s ease;
  }

@@ -42,7 +42,7 @@ h5 {
 }
 
 .box {
-   background-color: powderblue;
+   background-color: rgba(234, 234, 234, 0.833);
    color: rgb(27, 27, 27);
    border-radius: 5px;
    padding: 20px;
