@@ -1,11 +1,28 @@
 @use '../abstracts' as a;
 
 
-// Hero 
+
+
+
+body {
+    background-image: url(../images/background_mobile.png);
+    background-position: center;
+}
+
+
+
+// Hero
 
 #hero {
+    margin-top: 40px;
+    height: 700px;
+}
+
+// Scroll Animation 
+
+#scrolling-con {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 100px;
 
     .box {
         height: 600px;
@@ -20,11 +37,33 @@
 
 // Buy Area
 
-#buy-area img {
-    width:50%;
+#buy-area {
+    margin-top: 100px;
+    @include a.flex-center;
+    text-align: center;
+    gap: 20px;
+
+img {
+    width:5%;
+}
 }
 
+@media screen and (min-width: 523px) {
+
+
+    body {
+        background-image: url(../images/background_desktop.png);
+    }
+
+}
+
+
 @media screen and (min-width: 768px) {
+
+
+    body {
+        background-image: url(../images/background_desktop.png);
+    }
 
 #hero {
     .box {
@@ -63,6 +102,10 @@
 
 
 @media screen and (min-width: 1200px) {
+
+#xray {
+    height:587px;
+}
 
 #hero  {          
     .box {
