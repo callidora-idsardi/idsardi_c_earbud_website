@@ -6,7 +6,9 @@
 
 body {
     background-image: url(../images/background_mobile.png);
-    background-position: center;
+    background-repeat: repeat-y;
+    background-position: center top  -130px;
+ 
 }
 
 
@@ -53,6 +55,8 @@ img {
 
     body {
         background-image: url(../images/background_desktop.png);
+        background-position: center top -200px;
+    
     }
 
 }
@@ -115,3 +119,13 @@ img {
 }
 
 }
+
+
+@media screen and (min-width: 1920px) {
+
+  
+
+}
+   
+
+    
