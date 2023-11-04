@@ -33,7 +33,7 @@ ul {
 
 @media screen and (min-width: 768px) {
   h2 {
-    font-size: 8rem;
+    font-size: 4rem;
   }
   p {
     font-size: 1.6rem;
@@ -155,7 +155,6 @@ ul {
   font-weight: bold;
   text-decoration: none;
   transition: all 0.4s ease;
-  margin-right: 10px;
   padding-left: 9px;
   display: block;
 }
@@ -169,27 +168,78 @@ footer .burger-button {
 }
 
 .sub-footer-nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.sub-footer-nav hr {
+  margin-top: 10px;
+  width: 400px;
 }
 .sub-footer-nav h3 {
   font-size: 1.6rem;
   margin-bottom: 5px;
+  margin-top: 50px;
 }
 .sub-footer-nav ul li {
   margin-bottom: 10px;
   margin-top: 10px;
+  text-decoration: none;
+  list-style: none;
+}
+.sub-footer-nav img {
+  width: 30px;
+  transition: all 0.4s ease;
+}
+.sub-footer-nav img:hover {
+  opacity: 50%;
 }
 
 .icon-con {
   display: flex;
-  padding: 50px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  list-style: none;
+  margin-bottom: 50px;
+}
+.icon-con img {
+  margin: 5px;
+  padding: 3px;
+  text-decoration: none;
+  color: rgb(121, 121, 121);
+  transition: all 0.4s ease;
+}
+.icon-con img:hover {
+  opacity: 50%;
 }
 
 /* Tablet Size */
 @media screen and (min-width: 768px) {
+  .icon-con {
+    padding: 0;
+  }
+  .sub-footer-nav {
+    text-align: start;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 50px;
+  }
+  .sub-footer-nav img {
+    width: 20px;
+    margin: 0;
+  }
+  .sub-footer-nav hr {
+    display: none;
+  }
+  .sub-footer-nav ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    margin-top: 0;
+    text-decoration: none;
+    list-style: none;
+  }
   #footer-nav {
     display: block;
     margin-top: 30px;
@@ -212,14 +262,60 @@ footer .burger-button {
     border: none;
     display: inline;
   }
+  #footer-logo {
+    width: 50px;
+    margin: 50px;
+  }
 }
 @media screen and (min-width: 1200px) {
-  .burger-con {
+  .sub-footer-nav {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    gap: 50px;
+  }
+  .sub-footer-nav hr {
+    margin-top: 10px;
+  }
+  .sub-footer-nav h3 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+    margin-top: 50px;
+  }
+  .sub-footer-nav ul li {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.6rem;
+  }
+  .sub-footer-nav img {
+    width: 30px;
+    transition: all 0.4s ease;
+  }
+  .sub-footer-nav img:hover {
+    opacity: 50%;
+  }
+  .icon-con {
+    display: flex;
+    padding: 50px;
+    list-style: none;
+  }
+  .icon-con img {
+    padding: 3px;
+    margin: 10px;
+    text-decoration: none;
+    color: rgb(121, 121, 121);
+    transition: all 0.4s ease;
+  }
+  .icon-con img:hover {
+    opacity: 50%;
+  }
+  .icon-con .burger-con {
     display: flex;
     margin-top: 30px;
     justify-content: center;
   }
-  .burger-button {
+  .icon-con .burger-button {
     display: none;
   }
 }
@@ -284,7 +380,7 @@ model-viewer h2 {
 @media screen and (min-width: 768px) {
   model-viewer {
     width: 740px;
-    height: 950px;
+    height: 750px;
   }
   model-viewer p {
     font-size: 1.2rem;
@@ -401,6 +497,72 @@ model-viewer h2 {
     transform: translate(-40%, -30%);
   }
 }
+#footer-newsletter1 h3 {
+  margin-bottom: 15px;
+}
+#footer-newsletter1 input {
+  transition: all 200ms ease-in;
+}
+#footer-newsletter1 input [type=submit] {
+  padding: 10px;
+  border: none;
+  align-self: left;
+  font-size: 12px;
+  cursor: pointer;
+}
+#footer-newsletter1 input[type=submit]:hover {
+  background-color: rgba(255, 240, 255, 0.655);
+  border-radius: 20px 5px;
+}
+#footer-newsletter1 input, #footer-newsletter1 input textarea {
+  font-family: "forma-djr-micro", sans-serif;
+  border: none;
+  font-size: 12px;
+  color: #404040;
+  background-color: rgb(255, 227, 255);
+  padding: 10px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  #footer-newsletter1 input [type=submit] {
+    padding: 5px;
+    border: none;
+    font-size: 1rem;
+  }
+  #footer-newsletter1 input, #footer-newsletter1 input textarea {
+    font-size: 1rem;
+    padding: 5px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #footer-newsletter1 h3 {
+    margin-bottom: 15px;
+  }
+  #footer-newsletter1 input {
+    transition: all 200ms ease-in;
+  }
+  #footer-newsletter1 input [type=submit] {
+    padding: 10px;
+    border: none;
+    align-self: left;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  #footer-newsletter1 input[type=submit]:hover {
+    background-color: rgba(255, 240, 255, 0.655);
+    border-radius: 20px 5px;
+  }
+  #footer-newsletter1 input, #footer-newsletter1 input textarea {
+    font-family: "forma-djr-micro", sans-serif;
+    border: none;
+    font-size: 12px;
+    color: #404040;
+    background-color: rgb(255, 227, 255);
+    padding: 10px;
+    cursor: pointer;
+  }
+}
 body {
   background-image: url(../images/background_mobile.png);
   background-repeat: repeat-y;
@@ -435,20 +597,33 @@ body {
   width: 5%;
 }
 
-@media screen and (min-width: 523px) {
-  body {
-    background-image: url(../images/background_desktop.png);
-    background-position: center top -200px;
-  }
+#xray-area {
+  text-align: center;
 }
-@media screen and (min-width: 768px) {
-  body {
-    background-image: url(../images/background_desktop.png);
-  }
-  #hero .box {
-    height: 800px;
-  }
+#xray-area h2 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  margin-top: 20px;
 }
+#xray-area p {
+  font-size: 1.2rem;
+  backdrop-filter: saturate(100%) blur(50px);
+  background-color: rgba(249, 249, 249, 0.532);
+  border-radius: 10px;
+}
+#xray-area img {
+  margin: 10px;
+}
+
+#xray {
+  height: 400px;
+}
+
+.img-xray {
+  width: 50px;
+  height: 50px;
+}
+
 #info-con {
   padding: 50px;
 }
@@ -483,7 +658,46 @@ body {
   border-radius: 60px 5px;
 }
 
+#xray-area p {
+  padding: 50px;
+}
+
+@media screen and (min-width: 523px) {
+  body {
+    background-image: url(../images/background_desktop.png);
+    background-position: center top -200px;
+  }
+}
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url(../images/background_desktop.png);
+  }
+  #hero .box {
+    height: 800px;
+  }
+  #xray {
+    height: 500px;
+  }
+  #xray-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  #xray-area p {
+    padding: 20px;
+  }
+}
 @media screen and (min-width: 1200px) {
+  #xray-area {
+    display: inline;
+  }
+  .xray-info {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 50px;
+  }
   #xray {
     height: 587px;
   }

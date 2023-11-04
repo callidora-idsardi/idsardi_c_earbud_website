@@ -50,35 +50,38 @@ img {
 }
 }
 
-@media screen and (min-width: 523px) {
 
-
-    body {
-        background-image: url(../images/background_desktop.png);
-        background-position: center top -200px;
-    
+//X-Ray Area
+#xray-area {
+    text-align: center;
+    h2 {
+        font-size: 1.6rem;
+        margin-bottom: 10px;
+        margin-top: 20px;
     }
 
+    p {
+        font-size: 1.2rem;
+        @include a.background-blur;
+        border-radius: 10px;
+        
+    }
+
+    img {
+        margin: 10px;
+    }
 }
 
 
-@media screen and (min-width: 768px) {
-
-
-    body {
-        background-image: url(../images/background_desktop.png);
-    }
-
-#hero {
-    .box {
-            height: 800px;
-        }
-    
-    }
-
+#xray {
+    height:400px;
 }
 
 
+.img-xray {
+    width: 50px;
+    height: 50px;
+}
 // Info and Image Section
 
 #info-con {
@@ -103,9 +106,78 @@ img {
 #infobox2 {
     border-radius: 60px 5px;
 }
+// X-RAY Section 
+
+#xray-area {
+
+    p {
+        padding:50px;
+    }
+}
+
+@media screen and (min-width: 523px) {
+
+
+    body {
+        background-image: url(../images/background_desktop.png);
+        background-position: center top -200px;
+    
+    }
+
+
+
+
+}
+
+
+@media screen and (min-width: 768px) {
+
+
+    body {
+        background-image: url(../images/background_desktop.png);
+    }
+
+#hero {
+    .box {
+            height: 800px;
+        }
+    
+    }
+
+
+
+
+//X-Ray Area
+
+
+#xray {
+    height:500px;
+}
+
+#xray-area {
+    @include a.flex-center;
+    gap: 30px;
+
+    p {
+        padding:20px;
+    }
+}
+
+}
+
 
 
 @media screen and (min-width: 1200px) {
+
+    #xray-area {
+        display: inline;
+    }
+
+    .xray-info {
+        @include a.flex-start-center;
+        gap:50px;
+    }
+    
 
 #xray {
     height:587px;
