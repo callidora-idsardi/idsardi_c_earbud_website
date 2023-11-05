@@ -3,14 +3,23 @@ html {
 }
 
 h2 {
-  font-family: "amandine", sans-serif;
-  font-size: 3rem;
+  font-family: "articulat-cf", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 4rem;
+}
+
+h3 {
+  font-family: "articulat-cf", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 5rem;
 }
 
 p {
   font-family: "forma-djr-micro", sans-serif;
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   line-height: 25px;
 }
 
@@ -33,10 +42,15 @@ ul {
 
 @media screen and (min-width: 768px) {
   h2 {
-    font-size: 4rem;
+    font-size: 8rem;
+  }
+  h3 {
+    font-size: 8rem;
   }
   p {
     font-size: 1.6rem;
+    font-weight: 400;
+    font-style: normal;
   }
   ul {
     font-size: 1.2rem;
@@ -631,24 +645,6 @@ body {
   background-position: center top -130px;
 }
 
-.img-border {
-  padding: 1.5px;
-  background: linear-gradient(20deg, rgb(255, 228, 251) 20%, rgb(237, 230, 255) 49%, rgb(212, 244, 250) 91%);
-  background-size: 200% 200%;
-  animation: gradient 20s ease infinite;
-}
-@keyframes gradient {
-  0% {
-    background-position: 0% 100%;
-  }
-  50% {
-    background-position: 100% 0%;
-  }
-  100% {
-    background-position: 0% 100%;
-  }
-}
-
 #hero {
   margin-top: 40px;
   height: 700px;
@@ -674,28 +670,29 @@ body {
   gap: 20px;
 }
 #buy-area h2 {
-  letter-spacing: 2px;
+  font-family: "amandine", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 #buy-area img {
-  width: 25px;
+  width: 20px;
   margin-bottom: 20px;
 }
 
+.xray-info {
+  text-align: center;
+}
 .xray-info img {
   padding: 20px;
 }
 
-#xray-area {
-  text-align: center;
-}
 #xray-area h3 {
-  font-size: 1.6rem;
-  padding: 10px;
+  margin-left: 15px;
+  margin-top: 10px;
 }
 #xray-area p {
-  font-size: 1.6rem;
-  padding: 50px;
-  background-color: rgba(255, 255, 255, 0.79);
+  padding-top: 0;
+  margin-top: 20px;
 }
 
 #xray {
@@ -751,11 +748,18 @@ body {
 #info-container {
   text-align: center;
 }
+#info-container h2 {
+  margin-bottom: 10px;
+}
 
 @media screen and (min-width: 523px) {
   body {
     background-image: url(../images/background_desktop.png);
     background-position: center top -200px;
+  }
+  #xray-area p {
+    padding: 100px;
+    padding-top: 0;
   }
 }
 @media screen and (min-width: 768px) {
@@ -765,6 +769,9 @@ body {
   #hero .box {
     height: 800px;
   }
+  #buy-area img {
+    width: 50px;
+  }
   #xray-area {
     display: flex;
     align-items: center;
@@ -773,11 +780,16 @@ body {
   }
   #xray-area p {
     padding: 20px;
-    font-size: 1.2rem;
+  }
+  #xray-area h3 {
+    font-size: 8rem;
   }
   #xray-container {
-    margin-top: 100px;
     margin-bottom: 100px;
+    margin-top: 100px;
+  }
+  .xray-info {
+    text-align: left;
   }
   #info-con1 {
     display: flex;
@@ -831,15 +843,16 @@ body {
   #svg-con h3 {
     margin-left: 300px;
     display: block;
+    font-size: 1.2rem;
   }
   .draw {
     stroke-width: 3px;
     stroke-dasharray: 500;
-    animation: 5s arrow;
+    animation: 5s draw;
     animation-iteration-count: infinite;
     width: 60px;
   }
-  @keyframes arrow {
+  @keyframes draw {
     0% {
       stroke-dashoffset: 500;
     }
@@ -862,5 +875,12 @@ body {
   }
   .xray-info img {
     padding: 0;
+  }
+  #info-container {
+    margin-bottom: 50px;
+  }
+  #info-container h2 {
+    margin-top: 150px;
+    margin-bottom: 50px;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -33,13 +33,21 @@
 
 }
 
-// @keyframes AnimationName {
-//       0%{background-position:0% 75%}
-//       50%{background-position:100% 26%}
-//       100%{background-position:0% 75%}
-//   }
-
-
+@mixin draw {
+      stroke-width: 3px;
+      stroke-dasharray: 500;
+      animation: 5s draw;
+      animation-iteration-count: infinite;
+      width: 60px;
+      @keyframes draw{
+      0% {
+            stroke-dashoffset: 500; 
+      }
+      100% {
+            stroke-dashoffset: 0;
+      }
+      }
+}
 
 
 
