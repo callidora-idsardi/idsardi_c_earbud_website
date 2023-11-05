@@ -11,13 +11,6 @@ body {
  
 }
 
-.img-border {
-    padding: 1.5px;
-    @include a.moving-gradient;
-  }
-
-
-
 // Hero
 
 #hero {
@@ -51,18 +44,23 @@ body {
     gap: 20px;
 
 h2 {
-    letter-spacing: 2px;
+    font-family: "amandine", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 img {
-    width:25px;
+    width:20px;
     margin-bottom: 20px;
 }
 }
 
 
 //X-Ray Area
+
+
 .xray-info {
+    text-align: center;
     img {
         padding:20px;
     }
@@ -70,16 +68,14 @@ img {
 
 
 #xray-area {
-    text-align: center;
     h3 {
-        font-size: 1.6rem;
-        padding: 10px;
+        margin-left: 15px;
+        margin-top: 10px;
     }
 
     p {
-        font-size: 1.6rem;
-        padding:50px;
-        background-color: rgba(255, 255, 255, 0.79);
+       padding-top: 0;
+       margin-top: 20px;
     }
 
 }
@@ -134,6 +130,10 @@ img {
 
 #info-container {
     text-align: center;
+
+    h2 {
+        margin-bottom: 10px;
+    }
 }
 
 
@@ -143,6 +143,14 @@ img {
     body {
         background-image: url(../images/background_desktop.png);
         background-position: center top -200px;
+    
+    }
+
+    #xray-area {
+        p {
+           padding: 100px;
+           padding-top:0;
+        }
     
     }
 }
@@ -165,6 +173,14 @@ img {
 }
 
 
+    //BUY AREA
+    #buy-area{
+
+        img {
+            width:50px;
+        }
+    }
+
     //X-RAY 
 
 #xray-area {
@@ -173,15 +189,24 @@ img {
 
     p {
         padding:20px;
-        font-size: 1.2rem;
+    }
+
+    h3 {
+        font-size: 8.0rem;
     }
 }
 
+
 #xray-container {
-    margin-top: 100px;
     margin-bottom: 100px;
+    margin-top: 100px;
+
 }
 
+
+.xray-info {
+    text-align:left;
+}
 
 
     //INFORMATION + PICTURES
@@ -222,6 +247,8 @@ img {
 
 @media screen and (min-width: 1200px) {
 
+//HERO
+
     #hero  {          
         .box {
         height: 1080px;
@@ -229,7 +256,10 @@ img {
     
     }
 
+//Buy Area
+    
 
+//X-RAY
     .draw-arrow {
         display: block;
         width: 200px;
@@ -243,25 +273,13 @@ img {
         h3 {
             margin-left: 300px;
             display: block;
+            font-size: 1.2rem;
         }
 
     }
 
     .draw{
-        stroke-width: 3px;
-        stroke-dasharray: 500;
-        animation: 5s arrow;
-        animation-iteration-count: infinite;
-        width: 60px;
-    }
-    
-    @keyframes arrow{
-        0% {
-            stroke-dashoffset: 500; 
-        }
-        100% {
-            stroke-dashoffset: 0;
-        }
+       @include a.draw;
     }
 
     #xray-area {
@@ -281,6 +299,16 @@ img {
             padding:0;
         }
         
+    }
+
+
+    #info-container {
+
+        margin-bottom: 50px;
+        h2 {
+            margin-top: 150px;
+            margin-bottom: 50px;
+        }
     }
     
 
