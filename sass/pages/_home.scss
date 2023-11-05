@@ -57,17 +57,20 @@ img {
 
 
 //X-Ray Area
-
-#xray-container {
-    margin-top: 100px;
+.xray-info {
+    img {
+        padding:20px;
+    }
 }
+
+
+
 
 #xray-area {
     text-align: center;
     h2 {
         font-size: 1.6rem;
-        margin-bottom: 10px;
-        margin-top: 20px;
+        padding: 10px;
     }
 
     p {
@@ -75,9 +78,6 @@ img {
         background-color: rgba(255, 255, 255, 0.79);
     }
 
-    img {
-        margin: 10px;
-    }
 }
 
 
@@ -90,11 +90,22 @@ img {
     width: 50px;
     height: 50px;
 }
+
+
+.draw-arrow {
+    display: none;
+}
+
+#svg-con {
+        
+
+    h3 {
+        display: none;
+    }
+
+}
 // Info and Image Section
 
-#info-con {
-    padding: 50px;
-}
 
 .info-box {
     @include a.moving-gradient;
@@ -157,11 +168,6 @@ img {
 
 //X-Ray Area
 
-
-#xray {
-    height:500px;
-}
-
 #xray-area {
     @include a.flex-center;
     gap: 30px;
@@ -171,25 +177,73 @@ img {
     }
 }
 
+#xray-container {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+
 }
 
 
 
+
+
 @media screen and (min-width: 1200px) {
+    .draw-arrow {
+        display: block;
+        width: 200px;
+        margin-top: 410px;
+        margin-left: 160px;
+    }
+
+    #svg-con {
+        
+
+        h3 {
+            margin-left: 300px;
+            display: block;
+        }
+
+    }
+
+    .draw{
+        stroke-width: 3px;
+        stroke-dasharray: 500;
+        animation: 5s arrow;
+        animation-iteration-count: infinite;
+        width: 60px;
+    }
+    
+    @keyframes arrow{
+        0% {
+            stroke-dashoffset: 500; 
+        }
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
 
     #xray-area {
         display: inline;
     }
 
     .xray-info {
-        @include a.flex-start-center;
+        margin-top: 20px;
+        @include a.flex-center;
         gap:50px;
+
+        &:first-child {
+        margin-top: 0;
+        }
+
+        img {
+            padding:0;
+        }
+        
     }
     
 
-#xray {
-    height:587px;
-}
 
 #hero  {          
     .box {

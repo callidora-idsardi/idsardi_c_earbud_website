@@ -33,6 +33,7 @@
 
 #imageCon {
   position: relative;
+  width: 100%;
 }
 
 .slideImage {
@@ -44,7 +45,7 @@
 
 .image-left {
   background: url(../images/earbud.jpg) no-repeat;
-  width: 100%; 
+  width: 50%; 
   height: 377px; 
   z-index: 1; 
 }
@@ -53,14 +54,14 @@
   background: url(../images/earbud-x-ray.jpg) no-repeat;
   width: 100%; 
   height: 377px; 
-  z-index: 0; 
 }
 
 
 .image-drag {
+  z-index: 1; 
   height: 377px;
   @include a.moving-gradient;
-  left: 100%;
+  left: 50%;
   width: 10px;
   cursor: pointer;
 }
