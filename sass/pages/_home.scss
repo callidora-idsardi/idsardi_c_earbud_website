@@ -50,8 +50,13 @@ body {
     text-align: center;
     gap: 20px;
 
+h2 {
+    letter-spacing: 2px;
+}
+
 img {
-    width:5%;
+    width:25px;
+    margin-bottom: 20px;
 }
 }
 
@@ -64,17 +69,16 @@ img {
 }
 
 
-
-
 #xray-area {
     text-align: center;
-    h2 {
+    h3 {
         font-size: 1.6rem;
         padding: 10px;
     }
 
     p {
-        font-size: 1.2rem;
+        font-size: 1.6rem;
+        padding:50px;
         background-color: rgba(255, 255, 255, 0.79);
     }
 
@@ -97,16 +101,14 @@ img {
 }
 
 #svg-con {
-        
-
     h3 {
         display: none;
     }
-
 }
+
+
+
 // Info and Image Section
-
-
 .info-box {
     @include a.moving-gradient;
 
@@ -125,48 +127,45 @@ img {
 #infobox2 {
     border-radius: 60px 5px;
 }
-// X-RAY Section 
 
-#xray-area {
-
-    p {
-        padding:50px;
-    }
+.image-box {
+    padding: 100px;
 }
 
+#info-container {
+    text-align: center;
+}
+
+
+
+
 @media screen and (min-width: 523px) {
-
-
     body {
         background-image: url(../images/background_desktop.png);
         background-position: center top -200px;
     
     }
-
-
-
-
 }
 
 
 @media screen and (min-width: 768px) {
 
+    //GENERAL
 
     body {
         background-image: url(../images/background_desktop.png);
     }
 
+    //HERO
 #hero {
     .box {
             height: 800px;
-        }
+     }
     
-    }
+}
 
 
-
-
-//X-Ray Area
+    //X-RAY 
 
 #xray-area {
     @include a.flex-center;
@@ -174,22 +173,63 @@ img {
 
     p {
         padding:20px;
+        font-size: 1.2rem;
     }
 }
 
 #xray-container {
-    margin-top: 150px;
-    margin-bottom: 150px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+
+    //INFORMATION + PICTURES
+
+#info-con1 {
+    @include a.flex-center;
+    gap: 0;
+}
+
+#info-con2 {
+    @include a.flex-center;
+    gap: 0;
+}
+
+
+#info-container {
+    text-align: center;
+    .info {
+ 
+        height: 500px;
+        width: 500px;
+    }
+}
+
+.info-box {
+    @include a.moving-gradient;
+
+    p {
+        padding: 50px;
+    }
 }
 
 
 }
-
 
 
 
 
 @media screen and (min-width: 1200px) {
+
+    #hero  {          
+        .box {
+        height: 1080px;
+        }   
+    
+    }
+
+
     .draw-arrow {
         display: block;
         width: 200px;
@@ -243,14 +283,6 @@ img {
         
     }
     
-
-
-#hero  {          
-    .box {
-    height: 1080px;
-    }   
-
-}
 
 }
 
