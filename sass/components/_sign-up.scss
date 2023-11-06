@@ -27,7 +27,7 @@ input{
         border: none;
         font-size: 12px;
         color: #404040;
-        background-color: rgb(255, 227, 255);
+        @include a.moving-gradient;
         padding: 10px;
         cursor: pointer;
     }

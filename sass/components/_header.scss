@@ -1,5 +1,14 @@
 @use '../abstracts' as a;
 
+
+
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+   z-index:3;
+}
+
 .mobile-logo {
    width: 30px;
    margin-left: 30px;
@@ -10,6 +19,7 @@
 .desktop-logo {
    display: none;
 }
+
 
 
 .nav-con  {
@@ -27,6 +37,7 @@
    }
 
  }
+
 
 #sub-nav-con {
    background-color: white;
