@@ -1,4 +1,5 @@
 ## <img src="images/hotspot.svg" alt="Crystal Icon" width="15px">  Crystal ClearBuds <img src="images/hotspot.svg" alt="Crystal Icon" width="15px"> 
+<img src="images/style-frame-2.jpg" alt="Crystal ClearBuds" width="400px"> 
 
 *Current Progress: Responsive Prototype of Crystal ClearBud's Website*
 
